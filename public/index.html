@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1565CC">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<title>ConectaGerações — Tecnologia segura para todas as gerações</title>
+<meta name="description" content="Orientações simples e visuais para crianças e pessoas idosas usarem a internet com mais segurança, consciência e autonomia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="ConectaGerações — página inicial">
+      <img src="img/logo.svg" alt="ConectaGerações" width="166" height="56">
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#212121" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="criancas.html">Crianças</a>
+      <a href="idosos.html">Idosos</a>
+      <a href="pesquisas.html">Pesquisas</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="materiais.html">Materiais</a>
+      <a href="artigo.html">Artigo</a>
+      <a href="fontes.html">Fontes</a>
+    </nav>
+
+    <div class="a11y-controls">
+      <button id="font-decrease" aria-label="Diminuir tamanho do texto">A-</button>
+      <button id="font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+      <button id="contrast-toggle" aria-pressed="false" aria-label="Ativar ou desativar alto contraste">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+        Alto contraste
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Tecnologia segura para todas as gerações</h1>
+        <p class="hero-lead">Orientações simples para crianças e pessoas idosas usarem a internet com mais segurança, consciência e autonomia — sem precisar entender de tecnologia para isso.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="criancas.html">Sou criança ou responsável</a>
+          <a class="btn btn-green" href="idosos.html">Sou uma pessoa idosa</a>
+        </div>
+        <div style="margin-top:16px;">
+          <a class="alert-banner" href="idosos.html#caiu-golpe">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" stroke="#C62828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Caí em um golpe — o que fazer agora
+          </a>
+        </div>
+      </div>
+      <div class="hero-art hero-illustration">
+        <img src="img/home.svg" alt="Ilustração de uma pessoa idosa de bengala e uma pessoa jovem conversando ao lado de uma mesa com duas xícaras" width="380" height="215">
+      </div>
+    </div>
+  </section>
+
+  <!-- ESCOLHA POR ONDE COMEÇAR -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Escolha por onde começar</h2>
+      <p class="section-sub reveal">Conteúdos separados para cada momento da vida — do mesmo jeito simples e acolhedor.</p>
+      <div class="grid grid-2">
+        <a class="choice-card for-kids reveal" href="criancas.html">
+          <div class="icon-badge">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.2 4.5 2.8C12 6.2 13.5 5 15.5 5 19 5 21.5 8.5 21.5 12.5 19 16.65 12 21 12 21Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Crianças e famílias</h3>
+          <p>Privacidade, respeito e pedido de ajuda.</p>
+          <span class="btn btn-primary" style="width:fit-content;">Ver orientações</span>
+        </a>
+        <a class="choice-card for-seniors reveal" href="idosos.html">
+          <div class="icon-badge">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="#fff" stroke-width="2"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Pessoas idosas</h3>
+          <p>Autonomia, proteção de contas e prevenção de golpes.</p>
+          <span class="btn btn-green" style="width:fit-content;">Ver orientações</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIAIS EM DESTAQUE + REGRA DE OURO -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container feature-split">
+      <div>
+        <h2 class="section-title reveal">Materiais em destaque</h2>
+        <p class="section-sub reveal">Conteúdos prontos para ler, assistir e compartilhar com a família.</p>
+        <div class="grid grid-3">
+          <a class="card-link reveal" href="materiais.html#checklist">
+            <div class="card">
+              <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 13 4 4L19 7" stroke="#1565CC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3>Checklist contra golpes</h3>
+              <p>Lista prática com os principais sinais de golpes e como se proteger.</p>
+              <span class="card-arrow">Acessar material →</span>
+            </div>
+          </a>
+          <a class="card-link reveal" href="materiais.html#video">
+            <div class="card">
+              <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 6.8v10.4l9-5.2-9-5.2Z" fill="#1565CC"/></svg></div>
+              <h3>Vídeo: antes de clicar</h3>
+              <p>Vídeo curto com dicas rápidas para navegar com segurança.</p>
+              <span class="card-arrow">Assistir agora →</span>
+            </div>
+          </a>
+          <a class="card-link reveal" href="materiais.html#guia">
+            <div class="card">
+              <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" stroke="#1565CC" stroke-width="2" stroke-linejoin="round"/></svg></div>
+              <h3>Guia para famílias e educadores</h3>
+              <p>Atividades e conversas para promover o uso seguro da internet em casa e na escola.</p>
+              <span class="card-arrow">Baixar guia →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="section-title reveal">Regra de ouro</h2>
+        <div class="flow reveal">
+          <div class="flow-step"><div class="flow-num">1</div><p>Pare</p></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><div class="flow-num">2</div><p>Confira</p></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><div class="flow-num">3</div><p>Proteja</p></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><div class="flow-num">4</div><p>Peça ajuda</p></div>
+        </div>
+
+        <div class="card reveal" style="margin-top:24px;background:var(--green-tint);border-color:#CFEAD2;">
+          <h3>Aprender juntos protege mais</h3>
+          <p>Quando crianças, educadores e pessoas idosas aprendem juntas, a internet se torna um espaço mais seguro, respeitoso e cheio de possibilidades para todos.</p>
+          <a class="btn btn-green" href="projetos.html" style="width:fit-content;">Conheça o projeto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<section class="section" id="ajuda-golpe" style="background:var(--red-tint);">
+  <div class="container">
+    <div class="card reveal" style="border-color:#F3BEBE;">
+      <h2 class="section-title" style="color:var(--red);">Caiu em um golpe?</h2>
+      <p>Não use um contato enviado pelo próprio golpista. Fale com o banco por um canal oficial, guarde comprovantes e registre a ocorrência.</p>
+      <a class="btn btn-primary" href="fontes.html#canais">Ver canais oficiais de ajuda</a>
+      <p class="source-note" style="margin-bottom:0;"><strong>Fonte:</strong> Banco Central do Brasil — orientações sobre o que fazer após sofrer um golpe.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" id="rodape">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html#quem-somos">Quem somos</a></li>
+          <li><a href="sobre.html#missao">Nossa missão</a></li>
+          <li><a href="sobre.html#equipe">Equipe</a></li>
+          <li><a href="sobre.html#parceiros">Parceiros</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="criancas.html">Crianças</a></li>
+          <li><a href="idosos.html">Idosos</a></li>
+          <li><a href="materiais.html">Materiais</a></li>
+        <li><a href="artigo.html">Artigo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Projetos</h4>
+        <ul>
+          <li><a href="projetos.html#andamento">Projetos em andamento</a></li>
+          <li><a href="projetos.html#impacto">Exemplos de aplicação</a></li>
+          <li><a href="projetos.html#participar">Como participar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ajuda e contato</h4>
+        <ul>
+          <li><a href="sobre.html#faq">Perguntas frequentes</a></li>
+          <li><a href="sobre.html#contato">Fale conosco</a></li>
+          <li><a href="sobre.html#denuncia">Denuncie conteúdos</a></li>
+          <li><a href="fontes.html#canais">Canais oficiais</a></li>
+        </ul>
+      </div>
+      <div class="footer-notice">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6l-9-4Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div>
+          <strong>O ConectaGerações nunca solicita senhas, códigos bancários ou pagamentos.</strong>
+          Em caso de dúvidas ou situações suspeitas, procure ajuda em nossos canais oficiais.
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 ConectaGerações. Projeto educativo sobre segurança digital.<br>Grupo de Integração</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

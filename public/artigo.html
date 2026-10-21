@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1565CC">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<title>O projeto na prática — ConectaGerações</title>
+<meta name="description" content="Conheça o ConectaGerações de forma interativa: personagens, jogos, quiz e testes que mostram como o site ajuda crianças e pessoas idosas a navegar com segurança.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="ConectaGerações — página inicial">
+      <img src="img/logo.svg" alt="ConectaGerações" width="166" height="56">
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#212121" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="criancas.html">Crianças</a>
+      <a href="idosos.html">Idosos</a>
+      <a href="pesquisas.html">Pesquisas</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="materiais.html">Materiais</a>
+      <a href="artigo.html" aria-current="page">Artigo</a>
+      <a href="fontes.html">Fontes</a>
+    </nav>
+    <div class="a11y-controls">
+      <button id="font-decrease" aria-label="Diminuir tamanho do texto">A-</button>
+      <button id="font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+      <button id="contrast-toggle" aria-pressed="false" aria-label="Ativar ou desativar alto contraste">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+        Alto contraste
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+  <div class="container breadcrumb"><a href="index.html">Início</a><span class="sep">›</span>O projeto na prática</div>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>O ConectaGerações na prática</h1>
+        <p class="hero-lead">Uma viagem curta e interativa pela história do projeto: quem queremos ajudar, o que construímos e como você pode testar tudo por conta própria.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#passaporte">Começar a viagem</a>
+          <a class="btn btn-outline" href="#quiz">Ir direto ao quiz</a>
+          <a class="btn btn-outline" href="artigo-conecta-geracoes.pdf" download="Artigo-Conecta-Geracoes.pdf"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>Baixar o artigo (PDF)</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg class="journey-art" viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração de um caminho sinuoso com seis paradas coloridas, que representam as etapas da viagem">
+          <rect width="520" height="420" fill="#EAF2FE"/>
+          <circle cx="440" cy="70" r="40" fill="#FEF5E2"/>
+          <path d="M50 360C150 360 120 270 220 270S320 350 400 300 470 190 470 120" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round" fill="none"/>
+          <path d="M50 360C150 360 120 270 220 270S320 350 400 300 470 190 470 120" stroke="#D7DCE3" stroke-width="4" stroke-dasharray="4 14" stroke-linecap="round" fill="none"/>
+          <circle cx="60" cy="358" r="20" fill="#1565CC"/>
+          <circle cx="150" cy="318" r="20" fill="#2E7D32"/>
+          <circle cx="225" cy="270" r="20" fill="#F9A825"/>
+          <circle cx="320" cy="330" r="20" fill="#C62828"/>
+          <circle cx="410" cy="298" r="20" fill="#1565CC"/>
+          <circle cx="468" cy="125" r="26" fill="#2E7D32"/>
+          <path d="m458 125 7 7 13-14" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <text x="60" y="364" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">1</text>
+          <text x="150" y="324" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">2</text>
+          <text x="225" y="276" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="18" font-weight="800" fill="#212121">3</text>
+          <text x="320" y="336" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">4</text>
+          <text x="410" y="304" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">5</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="passaporte" style="padding-top:8px;">
+    <div class="container">
+      <div class="passport reveal">
+        <div class="passport-head">
+          <h2>Seu passaporte da viagem</h2>
+          <span class="passport-count" id="passaporte-contagem" aria-live="polite">0 de 6 carimbos</span>
+        </div>
+        <div class="bar" aria-hidden="true"><span id="passaporte-barra"></span></div>
+        <ul class="stamps">
+          <li class="stamp" data-stamp="personas">
+            <span class="stamp-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></span>
+            <span>Conhecer Helena e Lucas</span>
+            <span class="stamp-state">A conquistar</span>
+          </li>
+          <li class="stamp" data-stamp="ferramentas">
+            <span class="stamp-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg></span>
+            <span>Explorar o site por dentro</span>
+            <span class="stamp-state">A conquistar</span>
+          </li>
+          <li class="stamp" data-stamp="filtro">
+            <span class="stamp-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6l-9-4Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <span>Testar o filtro de segurança</span>
+            <span class="stamp-state">A conquistar</span>
+          </li>
+          <li class="stamp" data-stamp="semaforo">
+            <span class="stamp-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="20" rx="3"/><circle cx="12" cy="7" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="12" cy="17" r="1.2"/></svg></span>
+            <span>Jogar o Semáforo</span>
+            <span class="stamp-state">A conquistar</span>
+          </li>
+          <li class="stamp" data-stamp="regra">
+            <span class="stamp-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg></span>
+            <span>Montar a Regra de Ouro</span>
+            <span class="stamp-state">A conquistar</span>
+          </li>
+          <li class="stamp" data-stamp="quiz">
+            <span class="stamp-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/></svg></span>
+            <span>Terminar um quiz</span>
+            <span class="stamp-state">A conquistar</span>
+          </li>
+        </ul>
+        <div class="passport-done" id="passaporte-final" role="status">
+          <p>Viagem completa! Você conquistou todos os carimbos e já pode ajudar alguém da família a navegar com mais segurança.</p>
+          <button class="btn btn-outline btn-small" id="passaporte-zerar" type="button">Começar de novo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="desafio" style="background:var(--gray-50);">
+    <div class="container">
+      <h2 class="section-title reveal">Por que a internet parece difícil?</h2>
+      <p class="section-sub reveal">Antes de construir qualquer coisa, a equipe conversou e pesquisou. Toque em cada cartão para ver o que apareceu.</p>
+      <div class="grid grid-5">
+        <div class="combinado-card reveal" role="button" tabindex="0" aria-expanded="false">
+          <div class="num">1</div>
+          <h3>Informação demais</h3>
+          <div class="combinado-detail">Telas cheias de textos, botões e anúncios fazem muita gente se perder, principalmente pessoas idosas.</div>
+        </div>
+        <div class="combinado-card reveal" role="button" tabindex="0" aria-expanded="false">
+          <div class="num">2</div>
+          <h3>Palavras difíceis</h3>
+          <div class="combinado-detail">Termos técnicos sem explicação afastam quem está começando. Por isso o site usa linguagem simples.</div>
+        </div>
+        <div class="combinado-card reveal" role="button" tabindex="0" aria-expanded="false">
+          <div class="num">3</div>
+          <h3>Medo de clicar errado</h3>
+          <div class="combinado-detail">Quem teme errar acaba evitando usar a internet. O site mostra o passo a passo e avisa o que fazer em caso de erro.</div>
+        </div>
+        <div class="combinado-card reveal" role="button" tabindex="0" aria-expanded="false">
+          <div class="num">4</div>
+          <h3>Letra pequena</h3>
+          <div class="combinado-detail">Dificuldades visuais pedem letras maiores e bom contraste. Por isso existem os botões A- e A+ e o alto contraste.</div>
+        </div>
+        <div class="combinado-card reveal" role="button" tabindex="0" aria-expanded="false">
+          <div class="num">5</div>
+          <h3>Texto demais para crianças</h3>
+          <div class="combinado-detail">Crianças perdem o interesse com muita leitura. Elas aprendem melhor jogando, testando e recebendo resposta na hora.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pessoas">
+    <div class="container">
+      <h2 class="section-title reveal">Quem inspirou o site</h2>
+      <p class="section-sub reveal">A equipe criou duas personagens para lembrar, a cada decisão, para quem o site estava sendo feito. Toque em um cartão para virar.</p>
+      <div class="persona-grid">
+        <div class="persona green reveal" role="button" tabindex="0" aria-pressed="false" data-persona="helena">
+          <div class="persona-face">
+            <div class="persona-top">
+              <div class="persona-avatar">
+                <svg viewBox="0 0 88 88" aria-hidden="true"><rect width="88" height="88" fill="#EAF6EC"/><path d="M14 88c4-24 18-34 30-34s26 10 30 34Z" fill="#2E7D32"/><circle cx="44" cy="36" r="17" fill="#F3D9B5"/><path d="M27 34c0-12 7-19 17-19s17 7 17 19c-4-8-10-11-17-11s-13 3-17 11Z" fill="#D7DCE3"/><circle cx="38" cy="37" r="2" fill="#212121"/><circle cx="50" cy="37" r="2" fill="#212121"/><path d="M39 44c3 3 7 3 10 0" stroke="#212121" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+              </div>
+              <div>
+                <h3>Helena Souza</h3>
+                <p class="persona-age">68 anos · representa as pessoas idosas</p>
+              </div>
+            </div>
+            <p class="persona-hint">Toque para conhecer a Helena <span aria-hidden="true">→</span></p>
+          </div>
+          <div class="persona-back">
+            <ul class="persona-list">
+              <li><span class="badge badge-green">Quer</span><span class="persona-text">Usar a internet com autonomia.</span></li>
+              <li><span class="badge badge-red">Teme</span><span class="persona-text">Errar e perder dinheiro ou dados.</span></li>
+              <li><span class="badge badge-blue">Precisa de</span><span class="persona-text">Letras ajustáveis, alto contraste e instruções passo a passo.</span></li>
+            </ul>
+            <p class="persona-note">Personagem criada pela equipe a partir da pesquisa. Toque para voltar.</p>
+          </div>
+        </div>
+        <div class="persona  reveal" role="button" tabindex="0" aria-pressed="false" data-persona="lucas">
+          <div class="persona-face">
+            <div class="persona-top">
+              <div class="persona-avatar">
+                <svg viewBox="0 0 88 88" aria-hidden="true"><rect width="88" height="88" fill="#EAF2FE"/><path d="M14 88c4-24 18-34 30-34s26 10 30 34Z" fill="#1565CC"/><circle cx="44" cy="38" r="16" fill="#F6C9A0"/><path d="M28 36c0-11 6-18 16-18s16 7 16 18c-3-5-8-8-16-8s-13 3-16 8Z" fill="#7A4B2E"/><circle cx="38" cy="39" r="2" fill="#212121"/><circle cx="50" cy="39" r="2" fill="#212121"/><path d="M38 45c3 4 9 4 12 0" stroke="#212121" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+              </div>
+              <div>
+                <h3>Lucas Almeida</h3>
+                <p class="persona-age">11 anos · representa as crianças</p>
+              </div>
+            </div>
+            <p class="persona-hint">Toque para conhecer o Lucas <span aria-hidden="true">→</span></p>
+          </div>
+          <div class="persona-back">
+            <ul class="persona-list">
+              <li><span class="badge badge-green">Gosta de</span><span class="persona-text">Aprender testando opções, como em um jogo.</span></li>
+              <li><span class="badge badge-red">Desanima com</span><span class="persona-text">Telas com muito texto para ler.</span></li>
+              <li><span class="badge badge-blue">Precisa de</span><span class="persona-text">Resposta imediata, desafios e semáforos de risco.</span></li>
+            </ul>
+            <p class="persona-note">Personagem criado pela equipe a partir da pesquisa. Toque para voltar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ferramentas" style="background:var(--gray-50);">
+    <div class="container">
+      <h2 class="section-title reveal">Como o site funciona por dentro</h2>
+      <p class="section-sub reveal">Escolha uma aba e experimente. Tudo aqui é uma demonstração segura: nada do que você digita sai do seu aparelho.</p>
+      <div class="tabs reveal">
+        <div class="tab-list" role="tablist" aria-label="Partes do site">
+          <button class="tab-btn" type="button" role="tab" id="tab-leitura" aria-controls="painel-leitura" aria-selected="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg>
+            Fácil de ler
+          </button>
+          <button class="tab-btn" type="button" role="tab" id="tab-dentro" aria-controls="painel-dentro" aria-selected="false" tabindex="-1">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg>
+            Por dentro
+          </button>
+          <button class="tab-btn" type="button" role="tab" id="tab-protecao" aria-controls="painel-protecao" aria-selected="false" tabindex="-1">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6l-9-4Z"/></svg>
+            Proteção de dados
+          </button>
+        </div>
+
+        <div class="tab-panel active" role="tabpanel" id="painel-leitura" aria-labelledby="tab-leitura">
+          <div class="tab-split">
+            <div>
+              <h3>Cada pessoa lê do seu jeito</h3>
+              <p>O site tem botões para aumentar e diminuir as letras, um modo de alto contraste e botões grandes, fáceis de tocar. Além disso, nunca explicamos algo só pela cor: sempre juntamos cor, texto e ícone.</p>
+              <p>Experimente agora. A mudança vale para o site inteiro.</p>
+            </div>
+            <div class="demo-box">
+              <h4>Teste os controles</h4>
+              <div class="demo-actions">
+                <button class="btn btn-outline btn-small" type="button" id="demo-fonte-menos">Letra menor (A-)</button>
+                <button class="btn btn-outline btn-small" type="button" id="demo-fonte-mais">Letra maior (A+)</button>
+                <button class="btn btn-outline btn-small" type="button" id="demo-contraste">Alto contraste</button>
+              </div>
+              <h4 style="margin-top:20px;">Cor + texto + ícone</h4>
+              <div class="chip-row">
+                <span class="status-chip ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>Seguro</span>
+                <span class="status-chip warn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5M12 17h.01"/></svg>Atenção</span>
+                <span class="status-chip bad"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>Perigo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="painel-dentro" aria-labelledby="tab-dentro" hidden>
+          <div class="tab-split">
+            <div>
+              <h3>Simples, leve e sem complicação</h3>
+              <p>As páginas são feitas só com HTML, CSS e JavaScript. Os desenhos são em SVG, um formato que pode ser ampliado sem perder qualidade. E as suas escolhas de letra e contraste ficam guardadas no próprio navegador, para valerem em todas as páginas.</p>
+              <p>Mude a letra ou o contraste na aba anterior e volte aqui para ver o registro mudar.</p>
+            </div>
+            <div class="demo-box">
+              <h4>Guardado neste aparelho</h4>
+              <ul class="pref-list">
+                <li>Tamanho do texto <strong id="pref-fonte">100%</strong></li>
+                <li>Alto contraste <strong id="pref-contraste">Desligado</strong></li>
+              </ul>
+              <div class="demo-actions">
+                <button class="btn btn-outline btn-small" type="button" id="pref-aumentar">Aumentar a letra</button>
+                <button class="btn btn-outline btn-small" type="button" id="pref-contraste-btn">Alternar contraste</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="painel-protecao" aria-labelledby="tab-protecao" hidden>
+          <div class="tab-split">
+            <div>
+              <h3>O site nunca pede seus dados sensíveis</h3>
+              <p>O projeto foi desenhado para recusar mensagens que tragam CPF ou número de cartão, e para avisar: o ConectaGerações nunca solicita essas informações. Também há um limite de 5 envios a cada 10 minutos, que evita abusos.</p>
+              <p>Teste a simulação ao lado. Use os exemplos, que são números fictícios, e clique em enviar. No site publicado, o formulário <a href="sobre.html#fale-conosco" style="color:var(--blue);font-weight:700;text-decoration:underline;">Fale conosco</a> aplica essas mesmas regras.</p>
+            </div>
+            <div class="demo-box">
+              <h4>Simulação do “Fale conosco”</h4>
+              <label for="filtro-texto" class="sr-only">Mensagem de teste</label>
+              <textarea class="filter-field" id="filtro-texto" maxlength="300" placeholder="Escreva uma mensagem de teste" aria-describedby="filtro-veredito"></textarea>
+              <div class="filter-meta">
+                <span id="filtro-contador">0 de 300 caracteres</span>
+                <span class="attempt-dots" id="filtro-tentativas" role="img" aria-label="5 envios restantes"><i></i><i></i><i></i><i></i><i></i></span>
+              </div>
+              <div class="demo-actions">
+                <button class="btn btn-outline btn-small" type="button" data-exemplo="seguro">Mensagem segura</button>
+                <button class="btn btn-outline btn-small" type="button" data-exemplo="cpf">Exemplo com CPF</button>
+                <button class="btn btn-outline btn-small" type="button" data-exemplo="cartao">Exemplo com cartão</button>
+              </div>
+              <div class="verdict" id="filtro-veredito" aria-live="polite">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5B6572" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+                <p>Escreva ou escolha um exemplo e clique em enviar.</p>
+              </div>
+              <div class="demo-actions">
+                <button class="btn btn-primary btn-small" type="button" id="filtro-enviar">Enviar (simulação)</button>
+                <button class="btn btn-outline btn-small" type="button" id="filtro-reiniciar" hidden>Reiniciar simulação</button>
+              </div>
+              <p class="persona-note" id="filtro-limite" style="margin-top:10px;" hidden>Limite de 5 envios atingido. Em um site de verdade, seria preciso esperar 10 minutos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="trilhas">
+    <div class="container">
+      <h2 class="section-title reveal">Duas trilhas, dois jeitos de aprender</h2>
+      <p class="section-sub reveal">Cada público tem a sua própria atividade. Crianças aprendem com o semáforo; pessoas idosas, com uma regra de quatro passos.</p>
+      <div class="track-grid">
+        <div class="track kids reveal">
+          <div class="track-head">
+            <span class="card-icon" style="margin:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1565CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="20" rx="3"/><circle cx="12" cy="7" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="12" cy="17" r="1.2"/></svg></span>
+            <h3>Jogo do Semáforo</h3>
+          </div>
+          <p class="track-sub">Leia a situação e escolha a cor certa. Verde é tudo bem, amarelo é parar e perguntar, vermelho é sair e pedir ajuda.</p>
+          <div id="semaforo-jogo"></div>
+          <div class="sos-row">
+            <button class="btn btn-outline btn-small" type="button" data-modal-open="modal-algo-errado">Algo deu errado?</button>
+          </div>
+        </div>
+
+        <div class="track seniors reveal">
+          <div class="track-head">
+            <span class="card-icon" style="margin:0;background:var(--green-tint);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg></span>
+            <h3>Monte a Regra de Ouro</h3>
+          </div>
+          <p class="track-sub">Antes de pagar ou enviar dados, siga quatro passos. Toque nos cartões na ordem certa.</p>
+          <div id="regra-jogo"></div>
+          <div class="sos-row">
+            <button class="btn btn-alert btn-small" type="button" data-modal-open="modal-emergencia">Caí em um golpe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="quiz" style="background:var(--gray-50);">
+    <div class="container">
+      <h2 class="section-title reveal">Quiz Conecta</h2>
+      <p class="section-sub reveal">Escolha um modo e teste o que você aprendeu. São cinco perguntas, com resposta explicada logo depois de cada uma.</p>
+      <div class="quiz reveal" id="quiz-area" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section" id="proximos">
+    <div class="container">
+      <h2 class="section-title reveal">O caminho do projeto</h2>
+      <p class="section-sub reveal">O que já foi feito e o que vem a seguir.</p>
+      <ol class="timeline">
+        <li class="done reveal">
+          <span class="badge badge-green">Concluído</span>
+          <h3>04 de setembro de 2026 · Início do projeto</h3>
+          <p>Começa o projeto com o termo de abertura: um portal informativo e interativo para crianças e pessoas idosas. Ficam de fora aplicativos nativos e sistemas financeiros.</p>
+        </li>
+        <li class="done reveal">
+          <span class="badge badge-green">Concluído</span>
+          <h3>10 de setembro · Sprint 1</h3>
+          <p>Primeira etapa de desenvolvimento do projeto.</p>
+        </li>
+        <li class="done reveal">
+          <span class="badge badge-green">Concluído</span>
+          <h3>17 de setembro · Sprint 2</h3>
+          <p>Segunda etapa, dando continuidade ao que foi construído.</p>
+        </li>
+        <li class="done reveal">
+          <span class="badge badge-green">Concluído</span>
+          <h3>24 de setembro · Sprint 3</h3>
+          <p>Primeira versão funcional: páginas principais com conteúdo organizado por público e controles de acessibilidade.</p>
+        </li>
+        <li class="done reveal">
+          <span class="badge badge-green">Concluído</span>
+          <h3>08 de outubro · Back-end</h3>
+          <p>Entrega da parte do servidor, que cuida dos conteúdos e das mensagens do site.</p>
+        </li>
+        <li class="done reveal">
+          <span class="badge badge-green">Concluído</span>
+          <h3>15 de outubro · Página do artigo</h3>
+          <p>Entrega desta página interativa, que apresenta o artigo do projeto com jogos e quiz.</p>
+        </li>
+        <li class="next reveal">
+          <span class="badge badge-yellow">Em breve</span>
+          <h3>Entrega final</h3>
+          <p>Em breve.</p>
+        </li>
+        <li class="next reveal">
+          <span class="badge badge-blue">Depois da entrega</span>
+          <h3>Testes de usabilidade</h3>
+          <p>Vamos observar se pessoas idosas conseguem usar sozinhas o fluxo de emergência e se crianças conseguem explicar o que cada cor do semáforo significa.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="baixar" style="padding-top:0;">
+    <div class="container">
+      <div class="download-card reveal">
+        <div>
+          <h3>Quer ler o artigo completo?</h3>
+          <p>Baixe o artigo científico do projeto em PDF (3 páginas, cerca de 180 KB) e leia no seu ritmo.</p>
+        </div>
+        <a class="btn btn-primary" href="artigo-conecta-geracoes.pdf" download="Artigo-Conecta-Geracoes.pdf"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>Baixar o artigo (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container" style="padding-bottom:36px;">
+    <div class="source-note"><strong>Base desta página:</strong> <a href="artigo-conecta-geracoes.pdf" download="Artigo-Conecta-Geracoes.pdf">artigo científico do projeto ConectaGerações</a>, adaptado para linguagem simples e formato interativo. <a href="fontes.html#referencias">Ver fontes completas →</a></div>
+  </div>
+</main>
+
+<div class="modal-overlay" id="modal-emergencia" role="dialog" aria-modal="true" aria-labelledby="modal-emergencia-title">
+  <div class="modal">
+    <div class="modal-close-top">
+      <button class="modal-close" aria-label="Fechar lista de emergência"><span aria-hidden="true">✕</span> Fechar</button>
+    </div>
+    <h2 id="modal-emergencia-title" style="color:var(--red);">Caiu em um golpe?</h2>
+    <p>Respire fundo. Siga os passos abaixo e marque cada um conforme for fazendo.</p>
+    <ul data-checklist="sos-idosos">
+      <li><label class="check-item"><input type="checkbox"><span>Cortar o contato com a pessoa ou o número que pediu o pagamento.</span></label></li>
+      <li><label class="check-item"><input type="checkbox"><span>Falar com o banco por um canal oficial, nunca por contato enviado pelo golpista.</span></label></li>
+      <li><label class="check-item"><input type="checkbox"><span>Trocar as senhas das contas e dos aplicativos.</span></label></li>
+      <li><label class="check-item"><input type="checkbox"><span>Guardar as evidências: conversas, comprovantes e números.</span></label></li>
+      <li><label class="check-item"><input type="checkbox"><span>Registrar a ocorrência.</span></label></li>
+    </ul>
+    <div class="checklist-progress" data-checklist-progress="sos-idosos">
+      <span class="progress-text">0 de 5 verificados</span>
+      <div class="bar"><span></span></div>
+    </div>
+    <p><a href="fontes.html#canais" style="color:var(--blue);font-weight:700;text-decoration:underline;">Ver canais oficiais de ajuda</a></p>
+    <button class="btn btn-primary modal-close">Entendi</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-algo-errado" role="dialog" aria-modal="true" aria-labelledby="modal-algo-errado-title">
+  <div class="modal">
+    <div class="modal-close-top">
+      <button class="modal-close" aria-label="Fechar lista de ajuda"><span aria-hidden="true">✕</span> Fechar</button>
+    </div>
+    <h2 id="modal-algo-errado-title">Algo deu errado?</h2>
+    <p>Calma, você não está em apuros. Estes três passos ajudam. Marque cada um conforme for fazendo.</p>
+    <ul data-checklist="sos-criancas">
+      <li><label class="check-item"><input type="checkbox"><span>Parar a conversa e não responder mais.</span></label></li>
+      <li><label class="check-item"><input type="checkbox"><span>Guardar as provas, sem apagar as mensagens.</span></label></li>
+      <li><label class="check-item"><input type="checkbox"><span>Contar para um adulto de confiança.</span></label></li>
+    </ul>
+    <div class="checklist-progress" data-checklist-progress="sos-criancas">
+      <span class="progress-text">0 de 3 verificados</span>
+      <div class="bar"><span></span></div>
+    </div>
+    <p>Pedir ajuda nunca é errado, e você não vai se meter em problemas por isso.</p>
+    <button class="btn btn-primary modal-close">Entendi</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Sobre</h4><ul>
+        <li><a href="sobre.html#quem-somos">Quem somos</a></li>
+        <li><a href="sobre.html#missao">Nossa missão</a></li>
+        <li><a href="sobre.html#equipe">Equipe</a></li>
+        <li><a href="sobre.html#parceiros">Parceiros</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Navegue</h4><ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="criancas.html">Crianças</a></li>
+        <li><a href="idosos.html">Idosos</a></li>
+        <li><a href="materiais.html">Materiais</a></li>
+        <li><a href="artigo.html">Artigo</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Projetos</h4><ul>
+        <li><a href="projetos.html#andamento">Projetos em andamento</a></li>
+        <li><a href="projetos.html#impacto">Exemplos de aplicação</a></li>
+        <li><a href="projetos.html#participar">Como participar</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Ajuda e contato</h4><ul>
+        <li><a href="sobre.html#faq">Perguntas frequentes</a></li>
+        <li><a href="sobre.html#contato">Fale conosco</a></li>
+        <li><a href="sobre.html#denuncia">Denuncie conteúdos</a></li>
+          <li><a href="fontes.html#canais">Canais oficiais</a></li>
+      </ul></div>
+      <div class="footer-notice">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6l-9-4Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><strong>O ConectaGerações nunca solicita senhas, códigos bancários ou pagamentos.</strong>Em caso de dúvidas ou situações suspeitas, procure ajuda em nossos canais oficiais.</div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 ConectaGerações. Projeto educativo sobre segurança digital.<br>Grupo de Integração</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="artigo.js"></script>
+</body>
+</html>

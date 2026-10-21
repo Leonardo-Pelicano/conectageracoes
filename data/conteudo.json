@@ -1,0 +1,62 @@
+{
+  "projeto": {
+    "nome": "ConectaGerações",
+    "descricao": "Educação em segurança digital para crianças e pessoas idosas.",
+    "publicos": [
+      "crianças",
+      "pessoas idosas"
+    ],
+    "inicio": "2026-09-04"
+  },
+  "semaforo": [
+    {
+      "cor": "verde",
+      "significado": "Situação confortável",
+      "acao": "Pode continuar."
+    },
+    {
+      "cor": "amarelo",
+      "significado": "Dúvida",
+      "acao": "Pare e pergunte a um adulto de confiança."
+    },
+    {
+      "cor": "vermelho",
+      "significado": "Ofensa ou pressão",
+      "acao": "Saia da conversa e peça ajuda."
+    }
+  ],
+  "regra_de_ouro": [
+    {
+      "passo": 1,
+      "titulo": "Pare",
+      "texto": "Respire e não responda com pressa."
+    },
+    {
+      "passo": 2,
+      "titulo": "Confira",
+      "texto": "Veja quem está pedindo e se faz sentido."
+    },
+    {
+      "passo": 3,
+      "titulo": "Confirme",
+      "texto": "Fale por um canal que você já conhecia."
+    },
+    {
+      "passo": 4,
+      "titulo": "Proteja",
+      "texto": "Guarde senhas e códigos só para você."
+    }
+  ],
+  "emergencia_idosos": [
+    "Cortar o contato com a pessoa ou o número que pediu o pagamento.",
+    "Falar com o banco por um canal oficial, nunca por contato enviado pelo golpista.",
+    "Trocar as senhas das contas e dos aplicativos.",
+    "Guardar as evidências: conversas, comprovantes e números.",
+    "Registrar a ocorrência."
+  ],
+  "algo_deu_errado": [
+    "Parar a conversa e não responder mais.",
+    "Guardar as provas, sem apagar as mensagens.",
+    "Contar para um adulto de confiança."
+  ]
+}

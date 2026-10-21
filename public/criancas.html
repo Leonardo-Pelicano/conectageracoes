@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1565CC">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<title>Crianças — ConectaGerações</title>
+<meta name="description" content="Internet com segurança, respeito e responsabilidade: orientações para crianças e famílias.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="ConectaGerações — página inicial">
+      <img src="img/logo.svg" alt="ConectaGerações" width="166" height="56">
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#212121" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="criancas.html" aria-current="page">Crianças</a>
+      <a href="idosos.html">Idosos</a>
+      <a href="pesquisas.html">Pesquisas</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="materiais.html">Materiais</a>
+      <a href="artigo.html">Artigo</a>
+      <a href="fontes.html">Fontes</a>
+    </nav>
+    <div class="a11y-controls">
+      <button id="font-decrease" aria-label="Diminuir tamanho do texto">A-</button>
+      <button id="font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+      <button id="contrast-toggle" aria-pressed="false" aria-label="Ativar ou desativar alto contraste">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+        Alto contraste
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+  <div class="container breadcrumb"><a href="index.html">Início</a><span class="sep">›</span>Crianças e Tecnologia</div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Internet com segurança, respeito e responsabilidade</h1>
+        <p class="hero-lead">Aprenda a proteger suas informações, reconhecer situações estranhas e pedir ajuda sem medo.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#combinados">Ver os combinados de segurança</a>
+        </div>
+      </div>
+      <div class="hero-art hero-illustration">
+        <img src="img/criancas.svg" alt="Ilustração de duas crianças brincando com blocos de montar coloridos" width="300" height="180">
+      </div>
+    </div>
+  </section>
+
+  <!-- CINCO COMBINADOS -->
+  <section class="section" id="combinados">
+    <div class="container">
+      <h2 class="section-title reveal">Cinco combinados de segurança</h2>
+      <p class="section-sub reveal">Toque em cada combinado para entender melhor por que ele é importante.</p>
+      <div class="grid grid-5">
+        <div class="combinado-card reveal" role="button" tabindex="0" aria-expanded="false">
+          <div class="num">1</div>
+          <h3>Proteja suas informações</h3>
+          <div class="combinado-detail">Nome completo, endereço, escola e senhas são só seus. Não compartilhe com estranhos, nem mesmo em jogos ou chats.</div>
+        </div>
+        <div class="combinado-card reveal" role="button" tabindex="0" aria-expanded="false">
+          <div class="num">2</div>
+          <h3>Desconfie de desconhecidos</h3>
+          <div class="combinado-detail">Nem todo mundo é quem diz ser na internet. Se alguém que você não conhece te chamar, conte a um adulto de confiança.</div>
+        </div>
+        <div class="combinado-card reveal" role="button" tabindex="0" aria-expanded="false">
+          <div class="num">3</div>
+          <h3>Pense antes de clicar</h3>
+          <div class="combinado-detail">Links, prêmios e convites muito tentadores podem ser armadilhas. Na dúvida, não clique e pergunte para um adulto.</div>
+        </div>
+        <div class="combinado-card reveal" role="button" tabindex="0" aria-expanded="false">
+          <div class="num">4</div>
+          <h3>Respeite as pessoas</h3>
+          <div class="combinado-detail">Trate os outros como gostaria de ser tratado, também na internet. Não envie mensagens que magoariam alguém.</div>
+        </div>
+        <div class="combinado-card reveal" role="button" tabindex="0" aria-expanded="false">
+          <div class="num">5</div>
+          <h3>Peça ajuda sem medo</h3>
+          <div class="combinado-detail">Se algo te deixar confuso, assustado ou incomodado, contar para um adulto nunca é errado — e você não vai se meter em problemas.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEMAFORO -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <h2 class="section-title reveal">Semáforo da internet</h2>
+      <p class="section-sub reveal">Use as cores para saber como você está se sentindo em uma situação online.</p>
+      <div class="semaforo-grid">
+        <div class="semaforo-card verde reveal">
+          <h3><span class="semaforo-dot"></span>VERDE — Situação confortável</h3>
+          <p>Exemplo: estou aprendendo, me divertindo e me sinto bem.</p>
+        </div>
+        <div class="semaforo-card amarelo reveal">
+          <h3><span class="semaforo-dot"></span>AMARELO — Pare e pergunte</h3>
+          <p>Exemplo: algo me deixou em dúvida ou desconfortável.</p>
+        </div>
+        <div class="semaforo-card vermelho reveal">
+          <h3><span class="semaforo-dot"></span>VERMELHO — Saia e peça ajuda</h3>
+          <p>Exemplo: fui ameaçado, ofendido ou pressionado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALGO DEU ERRADO -->
+  <section class="section">
+    <div class="container">
+      <div class="card reveal" style="background:var(--blue-tint);border-color:#CFE1FA;padding:28px;">
+        <h2 class="section-title" style="margin-bottom:4px;">Algo deu errado?</h2>
+        <p class="section-sub" style="margin-bottom:22px;">Se algo assustar ou pressionar você, não é culpa sua. Siga estes passos:</p>
+        <div class="flow">
+          <div class="flow-step"><div class="flow-num">1</div><p>Pare a conversa</p><small>Pare de responder ou saia do chat.</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><div class="flow-num">2</div><p>Guarde a mensagem</p><small>Tire um print ou guarde como prova.</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><div class="flow-num">3</div><p>Conte a um adulto</p><small>Fale com alguém de confiança na sua vida.</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><div class="flow-num">4</div><p>Denuncie com ajuda</p><small>Procure a plataforma, a escola ou um canal de denúncia.</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIAIS PARA CRIANÇAS E FAMILIAS -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <h2 class="section-title reveal">Materiais para crianças e famílias</h2>
+      <p class="section-sub reveal">Atividades e conteúdos para explorar em casa ou na escola.</p>
+      <div class="grid grid-3">
+        <a class="card-link reveal" href="materiais.html#situacoes">
+          <div class="card">
+            <div class="card-icon" style="background:var(--blue-tint);color:var(--blue);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5m0 4h.01" stroke="#1565CC" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="#1565CC" stroke-width="2"/></svg>
+            </div>
+            <h3>Identifique o risco</h3>
+            <p>Situações do dia a dia para reconhecer e conversar sobre boas escolhas online.</p>
+            <span class="card-arrow">Explorar →</span>
+          </div>
+        </a>
+        <a class="card-link reveal" href="materiais.html#guia">
+          <div class="card">
+            <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" stroke="#1565CC" stroke-width="2" stroke-linejoin="round"/></svg></div>
+            <h3>Guia de privacidade</h3>
+            <p>Aprenda a proteger seus dados e manter suas informações seguras.</p>
+            <span class="card-arrow">Acessar →</span>
+          </div>
+        </a>
+        <a class="card-link reveal" href="materiais.html#atividade">
+          <div class="card">
+            <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v16m8-8H4" stroke="#1565CC" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+            <h3>Atividade para sala de aula</h3>
+            <p>Discussões guiadas para promover o uso seguro da internet na escola.</p>
+            <span class="card-arrow">Ver atividade →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="container" style="padding-bottom:36px;">
+  <div class="source-note"><strong>Base das orientações:</strong> CERT.br/NIC.br, <em>Cartilha de Segurança para Internet</em>, e Ministério dos Direitos Humanos e da Cidadania, orientação sobre segurança digital de crianças e adolescentes. <a href="fontes.html#referencias">Ver fontes completas →</a></div>
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Sobre</h4><ul>
+        <li><a href="sobre.html#quem-somos">Quem somos</a></li>
+        <li><a href="sobre.html#missao">Nossa missão</a></li>
+        <li><a href="sobre.html#equipe">Equipe</a></li>
+        <li><a href="sobre.html#parceiros">Parceiros</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Navegue</h4><ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="criancas.html">Crianças</a></li>
+        <li><a href="idosos.html">Idosos</a></li>
+        <li><a href="materiais.html">Materiais</a></li>
+        <li><a href="artigo.html">Artigo</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Projetos</h4><ul>
+        <li><a href="projetos.html#andamento">Projetos em andamento</a></li>
+        <li><a href="projetos.html#impacto">Exemplos de aplicação</a></li>
+        <li><a href="projetos.html#participar">Como participar</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Ajuda e contato</h4><ul>
+        <li><a href="sobre.html#faq">Perguntas frequentes</a></li>
+        <li><a href="sobre.html#contato">Fale conosco</a></li>
+        <li><a href="sobre.html#denuncia">Denuncie conteúdos</a></li>
+          <li><a href="fontes.html#canais">Canais oficiais</a></li>
+      </ul></div>
+      <div class="footer-notice">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6l-9-4Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><strong>O ConectaGerações nunca solicita senhas, códigos bancários ou pagamentos.</strong>Em caso de dúvidas ou situações suspeitas, procure ajuda em nossos canais oficiais.</div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 ConectaGerações. Projeto educativo sobre segurança digital.<br>Grupo de Integração</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

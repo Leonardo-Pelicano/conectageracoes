@@ -1,0 +1,14 @@
+{
+  "name": "conectageracoes",
+  "version": "1.0.0",
+  "description": "Site e back-end do projeto ConectaGerações",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
