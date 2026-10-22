@@ -1,4 +1,4 @@
-# ConectaGerações — site + back-end
+# ConectaGerações: site e back-end
 
 Tudo em um só serviço: o Node serve as páginas (pasta `public`), a API (`/api/...`) e recebe as mensagens do "Fale conosco".
 
@@ -9,12 +9,12 @@ conectageracoes/
 ├── render.yaml        configuração pronta para o Render (grátis)
 ├── data/conteudo.json conteúdo servido pela API
 └── public/            o site (HTML, CSS, JS)
-    ├── img/           logo, favicon e ilustrações das páginas
+    ├── img/           logo, favicon e ilustrações das páginas (home.jpg, criancas.jpg, idosos.jpg)
     ├── artigo-conecta-geracoes.pdf   PDF baixado na aba Artigo
     └── grupos/        trabalhos dos outros grupos
 ```
 
-Para trocar o artigo em PDF, substitua `public/artigo-conecta-geracoes.pdf` mantendo o mesmo nome. Para trocar o logo ou as ilustrações, substitua os arquivos de `public/img/` (logo.svg, home.svg, criancas.svg, idosos.svg).
+Para trocar o artigo em PDF, substitua `public/artigo-conecta-geracoes.pdf` mantendo o mesmo nome. Para trocar o logo ou as ilustrações, substitua os arquivos de `public/img/` (logo.svg, home.jpg, criancas.jpg, idosos.jpg).
 
 ## 1. Testar no seu computador (opcional)
 

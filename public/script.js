@@ -1,4 +1,3 @@
-
 (function () {
   "use strict";
 
@@ -8,7 +7,6 @@
   var MAX_SCALE = 1.4;
   var STEP = 0.1;
 
-  
   function applyFontScale(scale) {
     scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, scale));
     document.documentElement.style.setProperty("--font-scale", scale);
@@ -35,7 +33,6 @@
     }
   }
 
-  
   function initContrastControl() {
     var toggle = document.getElementById("contrast-toggle");
     var saved = localStorage.getItem(CONTRAST_KEY) === "true";
@@ -51,7 +48,6 @@
     }
   }
 
-  
   function initMobileNav() {
     var toggle = document.getElementById("nav-toggle");
     var nav = document.getElementById("main-nav");
@@ -81,7 +77,6 @@
     });
   }
 
-  
   function initAccordions() {
     document.querySelectorAll(".accordion-trigger").forEach(function (btn) {
       btn.addEventListener("click", function () {
@@ -93,7 +88,6 @@
     });
   }
 
-  
   function initCombinados() {
     document.querySelectorAll(".combinado-card").forEach(function (card) {
       function toggle() {
@@ -110,7 +104,6 @@
     });
   }
 
-  
   function initModals() {
     document.querySelectorAll("[data-modal-open]").forEach(function (opener) {
       opener.addEventListener("click", function () {
@@ -139,7 +132,6 @@
     });
   }
 
-  
   function initReveal() {
     var items = document.querySelectorAll(".reveal");
     if (!items.length) return;
@@ -161,7 +153,6 @@
     items.forEach(function (el) { observer.observe(el); });
   }
 
-  
   function initHeaderScroll() {
     var header = document.querySelector(".site-header");
     if (!header) return;
@@ -172,7 +163,6 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 
-  
   function initChecklists() {
     document.querySelectorAll("[data-checklist]").forEach(function (list) {
       var boxes = list.querySelectorAll('input[type="checkbox"]');
@@ -194,7 +184,6 @@
     });
   }
 
-  
   function initVideoPlayers() {
     document.querySelectorAll(".video-player").forEach(function (player) {
       var scenes = player.querySelectorAll(".vp-scene");

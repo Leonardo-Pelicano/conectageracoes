@@ -1,14 +1,4 @@
 "use strict";
-/**
- * Back end do ConectaGerações — sem banco de dados e sem dependências externas.
- *
- * - Serve as páginas do site (pasta /public)
- * - Expõe o conteúdo do site por API (lido de data/conteudo.json)
- * - Recebe mensagens do "Fale conosco" e grava em data/mensagens.jsonl
- * - Painel de leitura das mensagens protegido por ADMIN_TOKEN
- *
- * Variáveis de ambiente: PORT (3000), ADMIN_TOKEN (opcional), DATA_DIR (./data)
- */
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
@@ -20,7 +10,7 @@ const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, "data");
 const CONTEUDO_FILE = path.join(DATA_DIR, "conteudo.json");
 const MENSAGENS_FILE = path.join(DATA_DIR, "mensagens.jsonl");
 const ADMIN_TOKEN = process.env.ADMIN_TOKEN || "";
-const MAX_BODY = 10 * 1024; // 10 KB
+const MAX_BODY = 10 * 1024;
 const TIPOS = ["duvida", "oficina_parceria", "denuncia_conteudo", "outro"];
 const RATE_LIMIT = { max: 5, janelaMs: 10 * 60 * 1000 };
 
@@ -47,8 +37,6 @@ const MIME = {
   ".woff2": "font/woff2",
   ".ttf": "font/ttf",
 };
-
-/* ---------- utilidades ---------- */
 
 const SECURITY_HEADERS = {
   "X-Content-Type-Options": "nosniff",
@@ -102,7 +90,7 @@ function lerCorpo(req) {
     let estourou = false;
     const partes = [];
     req.on("data", (c) => {
-      if (estourou) return; // descarta o resto; a conexão é encerrada após a resposta 413
+      if (estourou) return;
       tamanho += c.length;
       if (tamanho > MAX_BODY) {
         estourou = true;
@@ -126,15 +114,12 @@ function lerCorpo(req) {
 }
 
 function ipDoCliente(req) {
-  // Atrás de proxy/hospedagem, use X-Forwarded-For; caso contrário, o socket.
   const xff = req.headers["x-forwarded-for"];
   if (process.env.TRUST_PROXY === "1" && xff) return String(xff).split(",")[0].trim();
   return req.socket.remoteAddress || "desconhecido";
 }
 
-/* ---------- limite de requisições (em memória) ---------- */
-
-const tentativas = new Map(); // ip -> [timestamps]
+const tentativas = new Map();
 
 function excedeuLimite(ip) {
   const agora = Date.now();
@@ -143,7 +128,6 @@ function excedeuLimite(ip) {
   return recentes.length >= RATE_LIMIT.max;
 }
 
-// Só envios válidos gastam a cota: quem erra o formulário não é punido.
 function registrarEnvio(ip) {
   const lista = tentativas.get(ip) || [];
   lista.push(Date.now());
@@ -159,8 +143,6 @@ setInterval(() => {
   }
 }, 60 * 1000).unref();
 
-/* ---------- conteúdo (arquivo JSON, cacheado e recarregado se mudar) ---------- */
-
 let cacheConteudo = { mtime: 0, dados: {} };
 
 function carregarConteudo() {
@@ -174,8 +156,6 @@ function carregarConteudo() {
   return cacheConteudo.dados;
 }
 
-/* ---------- armazenamento de mensagens (JSONL, escrita serializada) ---------- */
-
 let filaEscrita = Promise.resolve();
 
 function salvarMensagem(registro) {
@@ -184,7 +164,7 @@ function salvarMensagem(registro) {
     fs.promises.appendFile(MENSAGENS_FILE, linha, { encoding: "utf8", mode: 0o600 })
   );
   return filaEscrita.catch((e) => {
-    filaEscrita = Promise.resolve(); // não trava a fila após uma falha
+    filaEscrita = Promise.resolve();
     throw e;
   });
 }
@@ -204,8 +184,6 @@ async function lerMensagens() {
     throw e;
   }
 }
-
-/* ---------- validação ---------- */
 
 function limpar(texto, max) {
   return String(texto == null ? "" : texto)
@@ -233,8 +211,6 @@ function validarMensagem(corpo) {
   }
   return { ok: Object.keys(erros).length === 0, erros, dados: { nome, email, tipo, mensagem } };
 }
-
-/* ---------- rotas da API ---------- */
 
 async function tratarApi(req, res, url) {
   const rota = url.pathname.replace(/\/+$/, "") || "/";
@@ -269,7 +245,6 @@ async function tratarApi(req, res, url) {
     if (typeof corpo !== "object" || corpo === null || Array.isArray(corpo)) {
       return erro(res, 400, "Formato inválido.");
     }
-    // Campo-armadilha para robôs (invisível para pessoas): finge sucesso e descarta.
     if (limpar(corpo.website, 200)) return enviarJson(res, 201, { ok: true });
 
     const v = validarMensagem(corpo);
@@ -319,8 +294,6 @@ async function tratarApi(req, res, url) {
     return erro(res, existe ? 405 : 404, existe ? "Método não permitido." : "Rota não encontrada.");
   }
 }
-
-/* ---------- arquivos estáticos ---------- */
 
 function servirEstatico(req, res, url) {
   if (req.method !== "GET" && req.method !== "HEAD") {
@@ -372,8 +345,6 @@ function pagina404(res) {
   res.end(html);
 }
 
-/* ---------- servidor ---------- */
-
 const servidor = http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, "http://localhost");
@@ -391,10 +362,10 @@ const servidor = http.createServer(async (req, res) => {
 
 if (require.main === module) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
-  carregarConteudo(); // falha cedo se o JSON estiver quebrado
+  carregarConteudo();
   servidor.listen(PORT, () => {
     console.log(`ConectaGerações no ar: http://localhost:${PORT}`);
-    if (!ADMIN_TOKEN) console.log("Aviso: ADMIN_TOKEN não definido — leitura de mensagens pela API desativada.");
+    if (!ADMIN_TOKEN) console.log("Aviso: ADMIN_TOKEN não definido, leitura de mensagens pela API desativada.");
   });
 }
 
