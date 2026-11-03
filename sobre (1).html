@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre o projeto | Pare, Pense e Confira</title>
+  <meta name="description" content="Conheça o projeto Pare, Pense e Confira e a equipe que o desenvolveu.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/components.js" defer></script>
+  <script src="js/acessibilidade.js" defer></script>
+  <script src="js/formulario.js" defer></script>
+</head>
+<body>
+  <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho: montado pelo js/components.js -->
+  <header class="header" id="header"></header>
+
+  <main id="conteudo">
+    <div class="container secao">
+
+      <div class="sobre">
+        <div class="pilha">
+          <h1>Sobre o projeto</h1>
+          <p class="sobre__sub">Educação digital para proteger quem a gente ama.</p>
+          <p>O projeto “Pare, Pense e Confira” nasceu da necessidade de proteger pessoas, especialmente idosos, contra golpes de phishing por SMS e e-mail.</p>
+          <p>Com o aumento dos crimes digitais, muitas pessoas são vítimas de mensagens falsas que se passam por bancos e órgãos do governo, sempre com urgência, ameaça ou promessa de prêmio.</p>
+          <p>Nosso objetivo é oferecer, de forma simples e acessível, um guia para identificar essas mensagens e agir com segurança.</p>
+        </div>
+
+        <aside>
+          <div class="ilustracao ilustracao--laranja ilustracao--grande"><img src="assets/img/illustracao.svg" alt="Ilustração de um casal de idosos, o público que o projeto busca proteger" width="300" height="200"></div>
+          <h2 class="equipe__titulo">Projeto desenvolvido por:</h2>
+          <dl class="equipe">
+            <div><dt>Dev Front-end:</dt><dd>Enrico</dd></div>
+            <div><dt>Scrum Master:</dt><dd>Gabriel Roque</dd></div>
+            <div><dt>Designer UX/UI:</dt><dd>Heitor Machado</dd></div>
+            <div><dt>Pesquisador:</dt><dd>Kaio Ribeiro</dd></div>
+            <div><dt>Pesquisadora:</dt><dd>Kathleen</dd></div>
+            <div><dt>Design Gráfico:</dt><dd>Vinicius Vidal</dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <section class="contato" aria-labelledby="t-contato">
+        <div class="contato__topo">
+          <div>
+            <h2 id="t-contato">Fale conosco</h2>
+            <p>Ficou com alguma dúvida sobre o projeto? Escreva para a nossa equipe.</p>
+          </div>
+          <img class="contato__img" src="assets/img/illustracao.svg" alt="Ilustração de uma pessoa ajudando um idoso, representando o apoio da nossa equipe" width="150" height="150">
+        </div>
+
+        <form class="form" id="form-contato" novalidate>
+          <div class="campo">
+            <label class="campo__rotulo" for="nome">Nome</label>
+            <input class="campo__input" id="nome" name="nome" type="text" autocomplete="given-name" placeholder="Digite seu nome" aria-describedby="erro-nome">
+            <p class="campo__erro" id="erro-nome"></p>
+          </div>
+          <div class="campo">
+            <label class="campo__rotulo" for="sobrenome">Sobrenome</label>
+            <input class="campo__input" id="sobrenome" name="sobrenome" type="text" autocomplete="family-name" placeholder="Digite seu sobrenome" aria-describedby="erro-sobrenome">
+            <p class="campo__erro" id="erro-sobrenome"></p>
+          </div>
+          <div class="campo">
+            <label class="campo__rotulo" for="email">Endereço de e-mail</label>
+            <input class="campo__input" id="email" name="email" type="email" autocomplete="email" placeholder="nome@exemplo.com" aria-describedby="erro-email">
+            <p class="campo__erro" id="erro-email"></p>
+          </div>
+          <div class="campo">
+            <label class="campo__rotulo" for="mensagem">Sua mensagem</label>
+            <textarea class="campo__input" id="mensagem" name="mensagem" placeholder="Digite sua pergunta ou mensagem" aria-describedby="erro-mensagem"></textarea>
+            <p class="campo__erro" id="erro-mensagem"></p>
+          </div>
+          <button class="btn btn--primario" type="submit">Enviar</button>
+          <p class="form__status" id="form-status" role="status"></p>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Rodapé: montado pelo js/components.js -->
+  <footer class="footer" id="footer"></footer>
+</body>
+</html>

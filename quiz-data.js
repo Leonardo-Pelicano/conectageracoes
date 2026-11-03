@@ -1,0 +1,5 @@
+window.quizQuestions=[
+ {q:"Uma mensagem diz que sua conta será bloqueada e pede para clicar em um link. O que fazer?",a:["Clicar rapidamente","Conferir pelos canais oficiais","Enviar sua senha"],correct:1,why:"Mensagens com urgência e links inesperados são suspeitas. Procure o canal oficial."},
+ {q:"Alguém pede um código recebido por SMS. Você deve:",a:["Compartilhar o código","Publicar o código","Não compartilhar e confirmar a solicitação"],correct:2,why:"Códigos de verificação são pessoais e não devem ser compartilhados."},
+ {q:"Como verificar um link suspeito?",a:["Conferir o endereço e acessar o site oficial digitando-o no navegador","Confiar porque tem o logo do banco","Encaminhar para amigos"],correct:0,why:"Logotipos podem ser copiados. Verifique o endereço e use canais oficiais."}
+];
