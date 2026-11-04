@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz educativo para aprender a identificar golpes de falsa identidade.">
+    <title>Desafio de Segurança | Senior Tech</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header class="quiz-header">
+        <a href="index.html" class="voltar">← Voltar para o site</a>
+        <div class="topo-quiz">
+            <div>
+                <p class="eyebrow">SENIOR TECH</p>
+                <h1>Desafio de Segurança</h1>
+            </div>
+            <div class="pontuacao" aria-live="polite">
+                <span>PONTOS</span>
+                <strong id="score">0</strong>
+            </div>
+        </div>
+        <div class="progresso-area">
+            <div class="progresso-info">
+                <span id="numeroQuestao">Pergunta 1 de 8</span>
+                <span id="sequencia">Sequência: 0</span>
+            </div>
+            <div class="barra"><div id="barraProgresso"></div></div>
+        </div>
+    </header>
+
+    <main class="quiz-main">
+        <section id="quizCard" class="quiz-card">
+            <div class="selo">DESAFIO</div>
+            <p class="situacao" id="categoria">SITUAÇÃO DO DIA A DIA</p>
+            <h2 id="pergunta">Carregando pergunta...</h2>
+            <div id="opcoes" class="opcoes"></div>
+            <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+            <button id="proxima" class="botao-proxima" type="button" hidden>Próxima pergunta →</button>
+        </section>
+
+        <aside class="dica-quiz">
+            <div class="icone-dica">💡</div>
+            <div>
+                <strong>Dica de segurança</strong>
+                <p>Se alguém criar urgência, pedir senha, código ou dinheiro, pare e confirme a identidade por um canal que você já conhece.</p>
+            </div>
+        </aside>
+    </main>
+
+    <section id="resultadoFinal" class="resultado-final" hidden>
+        <div class="trofeu">🏆</div>
+        <p class="eyebrow">DESAFIO CONCLUÍDO</p>
+        <h2>Você terminou o quiz!</h2>
+        <p id="mensagemFinal"></p>
+        <div class="resultado-numeros">
+            <div><span>Pontos</span><strong id="scoreFinal">0</strong></div>
+            <div><span>Acertos</span><strong id="acertosFinal">0/8</strong></div>
+        </div>
+        <div class="acoes-finais">
+            <button id="jogarNovamente" class="botao-reiniciar" type="button">Jogar novamente</button>
+            <a href="index.html" class="botao-site">Voltar ao site</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Projeto educativo sobre Segurança da Informação</p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

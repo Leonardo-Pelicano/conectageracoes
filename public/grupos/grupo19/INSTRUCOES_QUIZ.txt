@@ -1,0 +1,7 @@
+QUIZ SENIOR TECH — VERSÃO ATUALIZADA
+
+O quiz.html, quiz.css e quiz.js estão integrados ao projeto. O index.html já contém o botão “Entrar no quiz”.
+
+O quiz tem 8 situações diferentes, incluindo falso banco, órgão público, falsa entrega, falso advogado, falso funcionário de empresa, falso familiar, código de verificação e providências após golpe. A ordem das perguntas e das alternativas é embaralhada a cada partida. Cada resposta mostra feedback educativo; ao final aparecem pontuação, acertos e opção de jogar novamente.
+
+COMO TESTAR: extraia o ZIP; abra projeto de extensao/index.html; clique em “Entrar no quiz”; responda às oito perguntas e confira a tela final. Não renomeie os arquivos nem separe quiz.html de quiz.css e quiz.js.

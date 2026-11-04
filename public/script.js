@@ -9,7 +9,9 @@
 
   function applyFontScale(scale) {
     scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, scale));
-    document.documentElement.style.setProperty("--font-scale", scale);
+    document.documentElement.style.setProperty("--font-scale", "1");
+    // Zoom scales text declared in px, rem, em and inherited sizes consistently.
+    document.body.style.zoom = String(scale);
     localStorage.setItem(FONT_KEY, String(scale));
     return scale;
   }

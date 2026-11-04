@@ -1,0 +1,81 @@
+/* Senior Tech — Quiz / Modo Terceira Idade */
+:root {
+    --azul: #2A6FDB;
+    --verde: #15883E;
+    --ambar: #D97706;
+    --fundo: #F8F9FA;
+    --branco: #FFFFFF;
+    --grafite: #0F172A;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--fundo); color: var(--grafite); font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 1.6; }
+button, a { font: inherit; }
+
+.quiz-header { background: var(--azul); color: var(--branco); padding: 22px max(20px, calc((100% - 1100px) / 2)); }
+.voltar { color: var(--branco); font-weight: 700; text-decoration: none; display: inline-block; margin-bottom: 18px; }
+.voltar:hover { text-decoration: underline; }
+.topo-quiz { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.eyebrow { font-size: 15px; font-weight: 800; letter-spacing: .1em; margin: 0 0 4px; }
+h1 { margin: 0; font-size: clamp(32px, 5vw, 44px); line-height: 1.15; }
+.pontuacao { background: var(--branco); color: var(--azul); border-radius: 12px; min-width: 120px; padding: 10px 18px; text-align: center; }
+.pontuacao span { display: block; font-size: 13px; font-weight: 800; }
+.pontuacao strong { font-size: 30px; line-height: 1; }
+.progresso-area { margin-top: 25px; }
+.progresso-info { display: flex; justify-content: space-between; gap: 15px; font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+.barra { width: 100%; height: 12px; background: var(--branco); border-radius: 99px; overflow: hidden; }
+#barraProgresso { width: 12.5%; height: 100%; background: var(--verde); transition: width .3s ease; }
+
+.quiz-main { width: min(920px, calc(100% - 32px)); margin: 40px auto 25px; }
+.quiz-card { background: var(--branco); border-radius: 16px; padding: clamp(26px, 5vw, 48px); box-shadow: 0 3px 14px rgba(15,23,42,.08); border: 2px solid var(--azul); }
+.selo { display: inline-block; background: var(--azul); color: var(--branco); font-size: 14px; font-weight: 800; padding: 6px 12px; border-radius: 99px; }
+.situacao { color: var(--ambar); font-size: 16px; font-weight: 800; letter-spacing: .07em; margin: 18px 0 6px; }
+.quiz-card h2 { font-size: clamp(27px, 4vw, 36px); line-height: 1.3; margin: 0 0 28px; }
+.opcoes { display: grid; gap: 14px; }
+.opcao { width: 100%; text-align: left; background: var(--branco); color: var(--grafite); border: 3px solid var(--azul); border-radius: 12px; padding: 17px 20px; cursor: pointer; font-weight: 700; font-size: 20px; line-height: 1.4; }
+.opcao:hover, .opcao:focus-visible { background: var(--fundo); outline: none; }
+.opcao .letra { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; margin-right: 10px; border-radius: 50%; background: var(--azul); color: var(--branco); }
+.opcao.certa { border-color: var(--verde); background: var(--branco); }
+.opcao.certa .letra { background: var(--verde); }
+.opcao.errada { border-color: var(--ambar); background: var(--branco); }
+.opcao.errada .letra { background: var(--ambar); }
+.opcao:disabled { cursor: default; }
+.feedback { min-height: 0; margin-top: 20px; padding: 0; border-radius: 10px; font-weight: 700; }
+.feedback.mostrar { padding: 16px 18px; background: var(--fundo); border-left: 6px solid var(--verde); }
+.feedback.mostrar.erro { border-left-color: var(--ambar); }
+.botao-proxima { margin-top: 20px; border: 0; background: var(--verde); color: var(--branco); padding: 15px 23px; border-radius: 10px; font-weight: 800; font-size: 20px; cursor: pointer; }
+.botao-proxima:hover, .botao-reiniciar:hover, .botao-site:hover { background: var(--ambar); }
+
+.dica-quiz { margin-top: 18px; display: flex; gap: 15px; align-items: flex-start; background: var(--branco); border-left: 6px solid var(--ambar); border-radius: 10px; padding: 18px 20px; }
+.icone-dica { font-size: 30px; }
+.dica-quiz strong { color: var(--ambar); }
+.dica-quiz p { margin: 3px 0 0; }
+
+.resultado-final { width: min(700px, calc(100% - 32px)); margin: 55px auto; background: var(--branco); border: 3px solid var(--verde); border-radius: 18px; padding: 40px; text-align: center; }
+.trofeu { font-size: 58px; }
+.resultado-final h2 { font-size: 36px; margin: 8px 0; }
+.resultado-numeros { display: flex; justify-content: center; gap: 18px; margin: 28px 0; }
+.resultado-numeros div { min-width: 150px; background: var(--fundo); border-radius: 12px; padding: 15px; }
+.resultado-numeros span { display: block; font-size: 16px; }
+.resultado-numeros strong { display: block; color: var(--azul); font-size: 32px; }
+.acoes-finais { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.botao-reiniciar, .botao-site { border: 0; text-decoration: none; background: var(--verde); color: var(--branco); padding: 14px 20px; border-radius: 10px; font-weight: 800; cursor: pointer; }
+.botao-site { background: var(--azul); }
+
+footer { background: var(--azul); color: var(--branco); text-align: center; padding: 28px 20px; margin-top: 60px; font-size: 16px; }
+footer p { margin: 0; }
+
+button:focus-visible, a:focus-visible { outline: 4px solid var(--ambar); outline-offset: 3px; }
+@media (max-width: 650px) {
+    body { font-size: 19px; }
+    .quiz-header { padding: 18px 16px; }
+    .topo-quiz { align-items: flex-start; }
+    .pontuacao { min-width: 90px; }
+    .quiz-main { width: min(100% - 20px, 920px); margin-top: 22px; }
+    .quiz-card { padding: 25px 18px; }
+    .opcao { font-size: 19px; }
+    .resultado-final { padding: 30px 20px; }
+    .resultado-numeros { gap: 10px; }
+    .resultado-numeros div { min-width: 120px; }
+}
