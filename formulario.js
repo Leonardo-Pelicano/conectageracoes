@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",()=>{const f=document.getElementById("form-contato");if(f)f.addEventListener("submit",e=>{e.preventDefault();const m=document.getElementById("form-feedback");if(m)m.textContent="Obrigado! Este formulário é demonstrativo e não envia mensagens.";});});
