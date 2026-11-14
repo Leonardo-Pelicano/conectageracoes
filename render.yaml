@@ -1,15 +1,7 @@
+# Coloque este arquivo na raiz do repositorio, ao lado de index.html.
 services:
   - type: web
-    name: conectageracoes
-    runtime: node
-    plan: free
-    buildCommand: npm install
-    startCommand: npm start
-    healthCheckPath: /api/saude
-    envVars:
-      - key: NODE_VERSION
-        value: "20"
-      - key: TRUST_PROXY
-        value: "1"
-      - key: ADMIN_TOKEN
-        generateValue: true
+    name: arcade-machine
+    runtime: static
+    buildCommand: 'echo "Arcade pronto: nenhum build necessario"'
+    staticPublishPath: .
